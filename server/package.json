@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file env --experimental-strip-types  --no-warnings  server/src/server.ts",
+    "dev": "node --env-file env --experimental-strip-types  --no-warnings --watch server/src/server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "@types/node": "^24.0.12",
+    "typescript": "^5.8.3",
+    "ultracite": "5.0.32"
+  }
+}
