@@ -1,4 +1,17 @@
 @baseUrl = http://localhost:3333
+###
 GET {{baseUrl}}/rooms
+###
 
 GET {{baseUrl}}/health
+###
+
+POST {{baseUrl}}/rooms
+Content-Type: application/json
+
+{
+    "name": "Room Name",
+    "description": "Room Description"
+}
+###
+GET {{baseUrl}}/rooms/{id}

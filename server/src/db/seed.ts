@@ -11,8 +11,15 @@ await seed(db, schema).refine(f => {
             columns:{
                 name: f.companyName(), // nome de empresa aleatoria
                 description: f.loremIpsum()// crie descricao aleatoria 
-            }
-        }
-    }
-})
+            },
+        },
+          questions: {
+            count: 10, // 10 perguntas por sala
+        },
+    
+}})
+
+
 await sql.end()
+
+console.log('Database seeded successfully!')
