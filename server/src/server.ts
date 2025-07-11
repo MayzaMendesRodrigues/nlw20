@@ -29,6 +29,7 @@ app.get('/health', () => {
 app.register(getRoomsRoute)
 app.register(createRoomsRoute)
 app.register(getRoomsQuestions)
+app.register(createRoomsRoute)
 app.listen({port: env.PORT }).then(() => {//isso e uma variavel de ambiente sempre 
     console.log(`Port: ${process.env.PORT}`)
     console.log('HTTP server running!')
